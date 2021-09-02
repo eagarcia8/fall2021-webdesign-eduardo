@@ -1,0 +1,66 @@
+<!-- forms are usually for collecting information from the user. Every form element "should" be inside of a form element. -->
+
+<h2>Example Inputs</h2>
+
+
+<form>
+    <!-- input element is the most common way of accepting data from the user. input has many different "modes" that can be selected using the type attribute. -->
+    <input type="text" disabled />
+    <input type="checkbox" />
+    <input type="radio" disabled/>
+    <input type="reset" />
+    <input type="submit" disabled/>
+    <input type="button" />
+    <input type="number" value="100" />
+    <!-- textarea is a lot like input type text, except it "stretches" so the user can type in and check a large of amount of text. -->
+    <textarea></textarea>
+    <!-- button is a generic clickable element that is usually hooked up to programming code to do something. -->
+    <button>Turn off<br />Lights</button>
+</form>
+
+<h2>Simple "Login" Form</h2>
+
+<form>
+    <!-- labels are visual pieces of text that signify what the input is for. This is also crucial for accessibility, make sure to use for and id attributes to link input with label. -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" />
+    <br />
+    <label for="password">Password:</label>
+    <input type="password" id="password" />
+    <br />
+    <input type="submit" />
+</form>
+
+
+<h2>Radio buttons & Checkboxes</h2>
+
+<form>
+<p>Foods Choices</p>
+<input id="food1" type="checkbox" name="food" />
+<label for="food1">Pizza</label>
+<br />
+<input id="food2" type="checkbox" name="food" />
+<label for="food2">Sushi</label>
+<br />
+<input id="food3" type="checkbox" name="food" />
+<label for="food3">Burrito</label>
+
+<p>Destination</p>
+<input type="radio" name="location" checked="checked" />
+<label>America</label>
+<br />
+<input type="radio" name="location" />
+<label>Europe</label>
+<br />
+<input type="radio" name="location" />
+<label>Asia</label>
+
+<!-- name attributes "group up" multiple radio buttons or checkboxes into a group. This is important for radio buttons because it only allows one selection. -->
+<p>Time</p>
+<input id="time1" type="radio" name="time" />
+<label for="time1">Now</label>
+<br />
+<input id="time2" type="radio" name="time" checked="checked" />
+<label for="time2">Later</label>
+
+</form>
