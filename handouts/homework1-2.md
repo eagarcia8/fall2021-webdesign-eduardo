@@ -1,4 +1,4 @@
-# Homework
+# Homework 1-2
 **Pay special attention to any errors or messages the Terminal may give you!**
 * Open a new Terminal window.
 * Using the commands ***cd*** and ***ls***, move to your class folder "fall2021-webdesign-*yourfirstname*".

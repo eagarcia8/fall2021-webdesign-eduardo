@@ -1,4 +1,4 @@
-# Homework 2-1
+# Homework 1-3
 * **Pay special attention to any errors or messages the Terminal may give you!**
 * Using **Visual Studio Code**, create a new file called "books.html" and save it in your homework folder inside of your class folder. Keep note that this file should use the html extension.
 * If you have **access to San Francisco Public Library**, do the following:
