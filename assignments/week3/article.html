@@ -16,7 +16,9 @@
                 font-family:Arial, Helvetica, sans-serif;
                 color: slategray;
                 text-align: justify;
-                line-height: 36px;
+                line-height: 32px;
+                width: 500px;
+                /* border: solid red 1px; */
             }
 
             h1 {
@@ -33,7 +35,67 @@
                 color:midnightblue;
                 text-align:right;
             }
+
+            blockquote, figcaption {
+                font-family: "Arial", sans-serif;
+                line-height: 24px;
+                color:indigo;
+            }
+
+            img {
+                border-color:lightcoral;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 20px;
+                width: 300px;
+                height: 900px;
+            }
+
+            ul {
+                border: lightcoral 2px solid;
+            }
+
+            li {
+                border:turquoise 2px solid;
+            }
+
+            label {
+                font-size: 12px;
+                text-transform:uppercase;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: steelblue;
+            }
+
+            input, textarea {
+                background-color:papayawhip;
+                border-color:slategray;
+                border-style:solid;
+                border-width: 1px;
+                border-radius: 2px;
+                font-size: 24px;
+                color: slategray;
+            }
+
+            textarea {
+                font-family:'Times New Roman', Times, serif;
+                color: red;
+            }
+
+            #last {
+                color:teal;
+            }
+
+            #second-image {
+                border-color:yellow;
+                width: 600px;
+            }
+
+            .end {
+                background-color: white;
+            }
         </style>
+
+
     </head>
 
     <body>
@@ -41,6 +103,8 @@
         <h1>First Article</h1>
 
         <h2>First Section</h2>
+
+        <p>Hello!</p>
         
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec arcu ultricies, eleifend nisl sit amet, congue quam. Etiam eget lacus elit. Aenean orci ex, blandit in sem ut, accumsan scelerisque erat. Fusce et velit accumsan, fermentum nunc in, accumsan orci. Sed efficitur dictum neque, quis auctor felis congue quis. Quisque euismod ullamcorper nulla, vel lobortis felis laoreet in. Aliquam mauris erat, porta sed nisl in, mattis semper lacus. Pellentesque sollicitudin ex sit amet consectetur eleifend. Vestibulum lobortis porta sem, eu dictum erat dictum ut. Nullam nisl lectus, fermentum egestas tristique sit amet, facilisis non tellus. Cras blandit tincidunt tortor quis faucibus.</p>
 
@@ -61,7 +125,7 @@
         </figure>
 
         <figure>
-            <img alt="A mountain top perspective of a valley leading to the ocean" src="images/pexels-roberto-nickson-2559941.jpg" />
+            <img id="second-image" alt="A mountain top perspective of a valley leading to the ocean" src="images/pexels-roberto-nickson-2559941.jpg" />
             <figcaption>A nice tropical island is also a nice destination.</figcaption>
         </figure>
 
@@ -70,9 +134,9 @@
             <figcaption>Sometimes going on an ocean cruise is just enough.</figcaption>
         </figure>
 
-        <p>Curabitur quis cursus dui, ut varius ipsum. In auctor nulla elit, eu consequat massa ultrices quis. Suspendisse potenti. Maecenas pellentesque dui rhoncus nunc tincidunt tempus. Quisque nibh eros, accumsan non luctus vitae, consequat quis urna. Quisque vulputate purus nisi, non efficitur ante porta ut. Nunc sagittis sodales massa, et euismod enim. Donec in nisi vel est lobortis tristique non sodales risus. Mauris eget urna eu nisi tincidunt dignissim. Pellentesque convallis placerat rutrum. Suspendisse euismod quam id felis porta, eu mattis nisl consectetur.</p>
+        <p id="last" class="end">Curabitur quis cursus dui, ut varius ipsum. In auctor nulla elit, eu consequat massa ultrices quis. Suspendisse potenti. Maecenas pellentesque dui rhoncus nunc tincidunt tempus. Quisque nibh eros, accumsan non luctus vitae, consequat quis urna. Quisque vulputate purus nisi, non efficitur ante porta ut. Nunc sagittis sodales massa, et euismod enim. Donec in nisi vel est lobortis tristique non sodales risus. Mauris eget urna eu nisi tincidunt dignissim. Pellentesque convallis placerat rutrum. Suspendisse euismod quam id felis porta, eu mattis nisl consectetur.</p>
 
-        <ul>
+        <ul class="end">
             <li>Praesent sit amet elit id sem consequat suscipit.</li>
             <li>Nulla imperdiet urna quis tempor pretium.</li>
             <li>Quisque lacinia turpis sed eros ullamcorper, id lobortis elit maximus.</li>
@@ -93,7 +157,7 @@
             <br />
             <label for="message">Message</label>
             <br />
-            <textarea id="message"></textarea>
+            <textarea rows="5" cols="20" id="message"></textarea>
             <br />
             <input type="submit" />
         </form>
