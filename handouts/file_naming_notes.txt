@@ -1,0 +1,6 @@
+Don't start with a special character or number.
+
+Don't use spaces.
+
+Don't start with a capital letter.
+
