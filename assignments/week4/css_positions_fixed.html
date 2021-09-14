@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS Positions</title>
+
+        <style>
+            body {
+                height: 5000px;
+                margin: 0;
+            }
+
+            #red, #green, #blue {
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
+
+            /* Fixed position will position the element to its "nearest scrolling ancestor", in most situations the viewport. Fixed acts like absolute when it's not scrolled. */
+            #red {
+                background-color: red;
+                position: fixed;
+                top: 100px;
+                left: 200px;
+            }
+
+            #green {
+                background-color: green;
+                
+            }
+
+            /* Sticky position will first set an element to Relative, once scroll touches element, it will switch to Fixed position.  */
+            #blue {
+                background-color: blue;
+                position: sticky;
+                top: 0;
+                left: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+        
+    </body>
+</html>
