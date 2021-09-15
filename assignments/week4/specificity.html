@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS Specificity</title>
+
+        <style>
+
+            /* 
+            Selector weights:
+
+            Element: 1
+            Class: 10
+            IDs: 100
+
+            If the selector has the same weight, AND the properties are the same, THEN the order that the properties appeared matters, the latest one will take effect.
+            */
+
+
+
+            ul li a {
+
+            }
+
+            div #sidebar {
+
+            }
+
+            body div ul .odd a {
+
+            }
+
+            .first {
+                color:darkturquoise;
+            }
+
+            #unique {
+                color:magenta;
+            }
+
+            /* !important keyword is the "nuclear" option, it adds 10,000 points to the property. */
+            p {
+                color: red !important;
+            }
+
+            p {
+                color: blue !important;
+            }
+
+            /* p {
+                color: black;
+            } */
+
+            body p {
+                color: blue;
+            }
+            
+            body div p {
+                background-color: green;
+                color: orange;
+            }
+
+            h1 {
+                font-size: 72px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem eveniet est hic. Corrupti, voluptas quas. Aperiam ut molestias ad in eius error tenetur, pariatur ipsum dolorum dicta vitae quisquam.</p>
+
+        <p id="unique">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum nihil fugit ex at labore! Incidunt, consequuntur culpa. Blanditiis aspernatur sint laborum accusamus doloremque, nam, deleniti placeat sunt quia nobis porro.</p>
+
+        <div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci magni saepe aperiam quo quis, fugit excepturi odio, ipsum soluta harum natus cupiditate eveniet laudantium fuga? Dignissimos, quidem. Rem, quaerat quibusdam.</p>
+
+        </div>
+
+        
+
+    </body>
+
+</html>
