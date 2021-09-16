@@ -1,0 +1,10 @@
+Monday:
+
+Tuesday:
+
+Wednesday:
+
+Thursday:
+CSS Display Property
+CSS Display Values: block, inline, inline-block
+Margins, Padding, Borders, and how they affect spacing of an inline/inline-block elements.
