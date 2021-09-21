@@ -9,26 +9,32 @@
 
             /* vh is a RELATIVE unit, 100vh means 100 percent of the viewport height. */
             body {
-                height: 100vh;
+                /* height: 100vh; */
                 margin: 0;
             }
 
             /* grid-template-columns and grid-template-rows describe how many columns and rows the grid will have as well as how much space each row/column will have. fr unit is a fractional unit, very very similar to CSS Flexbox grow and shrink units, except fr deals with the ENTIRE width/height. */
             #container {
                 border: solid black 5px;
-                height: 100%;
+                height: 600px;
                 display: grid;
                 grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+                font-size: 40px;
             }
 
             /* grid-column- and grid-row- specifies which LINE of the grid the child should start and end at. */
             #child1 {
                 background-color:dodgerblue;
                 grid-column-start: 1;
-                grid-column-end: 4;
+                grid-column-end: 6;
                 grid-row-start: 1;
                 grid-row-end: 3;
+            }
+
+            /* EM units is a responsive font unit that multiplies whatever the parent has for its font-size value.*/
+            #child1 p {
+                font-size: 3em;
             }
 
             #child2 {
@@ -36,22 +42,22 @@
                 grid-column-start: 1;
                 grid-column-end: 5;
                 grid-row-start: 3;
-                grid-row-end: 4;
+                grid-row-end: 5;
             }
 
             #child3 {
                 background-color:lightseagreen;
                 grid-column-start: 5;
                 grid-column-end: 6;
-                grid-row-start: 2;
-                grid-row-end: 6;
+                grid-row-start: 3;
+                grid-row-end: 5;
             }
 
             #child4 {
                 background-color:plum;
                 grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 5;
                 grid-row-end: 6;
             }
 

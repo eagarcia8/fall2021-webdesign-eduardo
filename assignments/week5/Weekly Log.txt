@@ -5,6 +5,10 @@ https://cssgridgarden.com/
 
 
 Tuesday:
+Google Fonts Service
+https://fonts.google.com/
+
+CSS @import
 
 Wednesday:
 
