@@ -11,5 +11,12 @@ https://fonts.google.com/
 CSS @import
 
 Wednesday:
+Binary numbers and how they are stored on computers
+Hexadecimals number
+Measuring units for storage and speed
+Response time or latency
+Pixels (Red Green Blue)
+Dimension of images (pixels on width by pixels on height)
+
 
 Thursday:
