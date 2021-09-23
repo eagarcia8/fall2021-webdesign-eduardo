@@ -20,3 +20,5 @@ Dimension of images (pixels on width by pixels on height)
 
 
 Thursday:
+Image Size (File Size) vs Image Dimensions (Pixel width by Pixel height).
+Example uses: Background image for webpage
