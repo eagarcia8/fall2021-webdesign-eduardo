@@ -1,0 +1,20 @@
+Basic Compression
+A A A B B C A A A C C C A C B B A
+3A B B C 3A 3C A C B B A
+
+Image Compression
+
+Non-Compressed RGB (3 Pixels)
+10, 10, 19
+10, 10, 20
+10, 10, 21
+9 Bytes Total
+
+JPEG COMPRESSION
+10, 10, 20
+10, 10, 20
+10, 10, 20
+5 Bytes Total
+
+
+
