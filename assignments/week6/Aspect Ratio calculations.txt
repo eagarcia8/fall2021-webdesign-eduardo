@@ -1,0 +1,35 @@
+To find the units of the ratio, you divide the amount of pixels by their respective ratio number.
+
+For example 3648 / 2 would give us the unit length of the resolution below. If we take one of these units and multiply by 3, we should get 5472.
+
+
+2:3
+3648x5472
+
+3:2
+3648x2432 
+8208x5472
+
+2:3
+3744x5616
+3:2
+3744x2496
+
+2:3
+2736x4104
+3:2
+2736x1824
+
+
+2:3
+3648x5472
+16:9
+3648x2052
+
+
+
+
+16:9
+5000x2812
+
+
