@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   sodipodi:docname="vector-logo-evernote-pink.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.67148"
+     inkscape:cx="127.13284"
+     inkscape:cy="104.09936"
+     inkscape:window-width="1598"
+     inkscape:window-height="942"
+     inkscape:window-x="229"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#fc9c9c;fill-opacity:1;stroke:#fc9c9c;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 15.526181,84.285893 c 4.354389,0.830544 4.150641,-0.601654 5.465406,-10.678318 l 0.164425,-2.685609 c -0.09431,3.480673 1.616632,4.110961 3.726965,4.110625 2.739769,-0.222366 4.073289,1.020113 4.001008,3.726966 0.260989,2.470766 -0.90982,3.106552 -2.850033,3.014456 -1.514097,-0.09728 -2.429488,-0.235834 -2.466374,-1.260591 -0.03689,-1.024757 0.504495,-1.507153 2.192333,-1.3154 l -0.05481,-2.082715 c -2.526634,-0.117375 -4.831848,-0.118206 -4.713515,3.726965 -0.160508,2.787631 1.252314,4.217084 5.097173,4.001008 3.950983,-0.09062 5.106668,0.391847 6.960656,-7.125081 1.137491,-3.632607 0.848706,-8.581778 0.493276,-13.592466 -0.664372,-5.396818 0.986686,-6.524979 -5.919298,-7.453931 l -4.110625,0.109617 c -1.073445,-2.664114 -2.279213,-2.133914 -4.54909,-2.411566 -2.870962,-0.223691 -4.288023,0.836975 -4.001008,3.781774 0.138259,2.98329 0.116512,3.076763 -3.025785,3.014459 -5.0166381,-0.703458 -3.7049589,3.680554 -2.9483214,7.618357 1.8730204,13.373219 0.6992787,13.99536 6.5376174,15.50145 z"
+       id="path1105"
+       sodipodi:nodetypes="cccccczccccccccccccc"
+       inkscape:export-filename="/Users/meda/Documents/fall2021/fall2021-webdesign-eduardo/assignments/week6/path1105.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 26.123646,68.858367 c 0.815878,-0.145228 1.941902,-0.151281 3.247493,0.344866 -0.263539,-3.174575 -2.981331,-2.534 -3.247493,-0.344866 z"
+       id="path4741"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/Users/meda/Documents/fall2021/fall2021-webdesign-eduardo/assignments/week6/path1105.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
