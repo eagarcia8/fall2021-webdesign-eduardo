@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--
+        Whats the difference between:
+        head header h1 thead 
+    -->
+
+    <head>
+        <meta charset="utf=8" />
+        <title>My First Website - Photo Gallery</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            main {
+                background-color: honeydew;
+            }
+
+            /* 
+            Flexbox is a display mode, the word SHOULD BE "flex" NOT "flexbox"
+            
+            flex-wrap says whether the flexbox is allowed to wrap its children when there is not enough width. The default is "nowrap".
+
+            flex-direction will tell the flexbox how to order the children AND which side of the flexbox the children start from.
+            */
+            #gallery-box {
+                display: flex;
+                border: 1px solid red;
+                /* width: 900px; */
+                margin: 0 auto;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+
+            /* 
+                flex-basis is the "starting point" for child's width.
+
+                flex-grow dictates how much of the free space the child can get. this unit is relative and similar to a ratio. The free space in the flexbox will be split up by the TOTAL amount of flex-grow units, and then will be assigned to the children.
+
+                flex-shrink dictates how much width the child has to sacrifice in order to display within the allowed parent width. the unit is similar to flex-grow. Note that this does not work when the children are wrapped by flex-wrap.
+
+                overflow: hidden says that if any children of the parent is outside of the parent container, that area is automatically hidden from view.
+            */
+            .image-box {
+                height: 400px;
+                border: 1px solid grey;
+                margin: 10px;
+                flex-basis: 200px;
+                /* flex-grow: 1; */
+                flex-shrink: 1;
+                overflow: hidden;
+            }
+
+            #third-image {
+                flex-grow: 2;
+                flex-shrink: 2;
+            }
+
+            .image-box img {
+                width: 100%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="youtube.html">YouTube Videos</a>
+                    </ul>
+                </nav>
+
+                <h1>My Favorite Gallery</h1>
+            </header>
+
+            <main>
+
+                <div id="gallery-box">
+
+                    <div class="image-box">
+                        <img src="images/pexels-gary-barnes-6231818.jpg" />
+                    </div>
+
+                    <div class="image-box">
+                        <img src="images/pexels-jonathan-borba-5501874.jpg" />
+                    </div>
+                    
+                    <div class="image-box" id="third-image">
+                        <img src="images/pexels-kelly-lacy-2950003.jpg" />
+                    </div>
+                    
+                    <div class="image-box">
+                        <img src="images/pexels-tom-balabaud-3693789.jpg" />
+                    </div>
+
+                </div>
+
+            </main>
+
+            <footer>
+                <p>Copyright held by respective owners</p>
+            </footer>
+        </div>
+    </body>
+
+</html>

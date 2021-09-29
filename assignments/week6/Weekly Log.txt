@@ -1,0 +1,21 @@
+Monday:
+Krita
+Aspect Ratios of images
+Common Screen Resolutions & Aspect Ratios
+
+
+Tuesday:
+Vector Graphics
+Inkscape
+SVG file format
+PNG file format
+
+Wednesday:
+FontAwesome Icone CSS library
+HTML nav element
+HTML file name "index.html"
+Embedding YouTube videos
+Embedding other webpages using HTML element iframe
+
+
+Thursday:
