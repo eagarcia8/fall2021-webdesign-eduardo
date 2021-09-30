@@ -19,3 +19,5 @@ Embedding other webpages using HTML element iframe
 
 
 Thursday:
+Web Hosts: Hosting, VPS, Dedicated
+Domain Names: .com .net .org

@@ -1,0 +1,33 @@
+Web host: You share the same computer with possibly thousands of other websites.
+
+$5-15/month
+
+VPS: Virtual Private Server. A literal virtual computer that uses part of a physical computer. You have full access and usage to your part of this physical computer.
+Something you may have heard of is.
+(Depending on RAM and CPU) $10-$50/month
+
+
+VPN, Virtual Private Network is a way to "cloak" your personal data going through your internet service provider.
+
+Dedicated Server: A complete physical server just for one 1 client. Similar to VPS but you have access to ALL of the physical computer.
+
+$50-600/month
+
+Cloud Host: Useful for large companies, lets you rent resources, not the actual computer.
+
+
+
+Domain Name:
+A "domain registrar" lets you "rent" a domain name, usually in 1 year increments.
+
+TLD - Top-Level Domains 
+https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
+
+.com $12-$20 per year
+.net $14-$20 per year
+.org $14-$20 per year
+.gov not available
+.edu not available
+.mil not available
+
+Some web hosts will give a "free domain", and sometimes this free domain will be removed after you stop paying for the web host. 
