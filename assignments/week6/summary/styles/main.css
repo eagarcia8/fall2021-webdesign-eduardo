@@ -1,0 +1,40 @@
+body {
+    background-color: #2c3e50;
+}
+
+#container {
+    background-color: #ecf0f1;
+    width: 860px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+nav {}
+
+nav ul {
+    width: 660px;
+    margin-left: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 48px;
+    width: 120px;
+    text-align: center;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+main table td {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+header, main, footer {
+}

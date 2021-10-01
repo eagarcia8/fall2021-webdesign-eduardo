@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+    <div id="container">
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basics.html">HTML Basics</a></li>
+                    <li><a href="styles.html">CSS Basics</a></li>
+                    <li><a href="images.html">Image Basics</a></li>
+                    <li><a href="thirdparty.html">Extra Tools</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <h2>Text Content</h2>
+
+            <p>The Paragraph element (p) is used for <em>normal</em> text.</p>
+
+            <h1>The Heading element (h1-h6) is used for content titles</h1>
+
+            <blockquote>
+                <p>The blockquote (blockquote) is used for text that adds to the main topic but isn't part of the main topic.</p>
+            </blockquote>
+
+            <h2>Lists</h2>
+
+            <ul>
+                <li>The unordered list (ul) is for a list of text (usually) without an order.</li>
+                <li>The unordered list always has list items (li) as children.</li>
+                <li>The unordered list by default uses bullet points.</li>
+            </ul>
+
+            <ol>
+                <li>The ordered list (ol) is for a list of text (usually) with an order.</li>
+                <li>The ordered list always has list items (li) as children.</li>
+                <li>The unordered list by default uses numbers.</li>
+            </ol>
+
+            <dl>
+                <dt>dl</dt>
+                <dd>The dictionary list (dl), is a list for terms (usually).</dd>
+                <dt>dt</dt>
+                <dd>The dictionary list has only two type of children, dictionary term (dt) and dictionary description (dd)</dd>
+                <dt>dd</dt>
+                <dd>The dictonary description by default is indented in relation to the term.</dd>
+            </dl>
+
+            <h2>Tables</h2>
+
+            <p>A table should be for tabular data. The common children for table are thead, tbody, tr, td, and th. By default tables do not have ANY styling.
+            <table>
+                <tr>
+                    <td>table</td>
+                    <td>is the container for the table contents.</td>
+                </tr>
+                <tr>
+                    <td>tr</td>
+                    <td>is for creating one row in the table.</td>
+                </tr>
+                <tr>
+                    <td>td</td>
+                    <td>is for the cells of that row, they go inside of tr.</td>
+                </tr>
+                <tr>
+                    <td>th</td>
+                    <td>is for the column or row "name" or "title"</td>
+                </tr>
+                <tr>
+                    <td>thead</td>
+                    <td>is for a special row designated specifically for 'th's</td>
+                </tr>
+                <tr>
+                    <td>tbody</td>
+                    <td>is for the main tabular rows.</td>
+                </tr>
+
+            </table>
+
+            <h2>Forms</h2>
+            
+                <p>Form inputs usually are LINKED to a label, each input must have a label attached except for the types button, reset, submit. They are linked using the attributes id and for.</p>
+
+            <form>
+                <input type="text" placeholder="The textbox is the most common input of a form" size="50" />
+                <br />
+                <input type="checkbox" />
+                <label>The checkbox is usually used for multi-select options</label>
+                <br />
+                <input type="radio" />
+                <label>The radio button is usually used for selecting one option out of a set of options.</label>
+                <br />
+                <textarea placeholder="The textarea is usually for large amounts of text, a feature is that the user can resize this area."></textarea>
+                <br />
+                <input type="reset" />
+                <label>The reset button will remove all the filled in content from its respective form.</label>
+                <br />
+                <input type="submit" />
+                <label>The submit button will submit the data to a backend.</label>
+            </form>
+
+            <h2>Images</h2>
+            <p>The img element is used for displaying images on a website. img elements REQUIRE the alt attribute, and can optionally have the title attribute (not the same as title element). Images are by default inline-block elements.</p>
+            <img src="images/example.jpg" alt="" />
+
+
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2021 Eduardo</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
