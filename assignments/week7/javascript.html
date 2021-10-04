@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        a
+        comment
+        */
+
+        // a single line comment.
+
+        // The console.log function allows us to send a value to the console at that point in time (or line)
+        console.log("Hello");
+
+        // VARIABLES
+
+        // Creating a variable uses the "var" keyword.
+        var box = "One Hundred";
+        
+        // We "call" the box variable, which will place the value its holding inside of the console.log parenthesis.
+        console.log(box);
+
+        // We can update variables by calling them and using the assignment operator (=).
+        box = "Hello There";
+
+        // Because we updated the variable, this console.log will send the new box value to the console.
+        console.log(box);
+
+        // DATATYPES
+
+        // Numbers
+        100;
+        10.5;
+        -7;
+        -8.8;
+        0;
+
+        // Strings, make sure to wrap in quotes.
+        "hello";
+        "100";
+        "true";
+        " ";
+        'var';
+
+        // Boolean
+        true;
+        false;
+
+
+        // OPERATORS
+
+        /*
+            +  Addition Operator
+            -  Subtraction Operator
+            *  Multiplier Operator
+            /  Division Operator
+            %  Modulo
+        */
+
+        // If there is an operator, it MUST be done first by the computer.
+        console.log(10 + 6);
+
+        var myNumber = 60 + 5;
+
+        console.log(myNumber);
+
+        var myNumber2 = 5 - 2;
+
+        var results = myNumber * myNumber2;
+
+        console.log(results);
+
+        console.log(45);
+
+
+
+        // EXAMPLE PROGRAM: Tax Calculator
+
+        // The user will put their purchases here.
+        var userPurchase = .89;
+
+        // This variable holds the current SF tax rate.
+        var sfTax = .085;
+
+        // This variable holds the current Texas tax rate.
+        var texasTax = .0625;
+
+        // We figure out how much tax is owed in SF.
+        var totalTax = userPurchase * sfTax;
+        // Then we add that SF tax to the purchase, to get a TOTAL expense.
+        var total = userPurchase + totalTax;
+
+        //Same thing as above but with Texas tax rate.
+        var totalTaxTexas = userPurchase * texasTax;
+        var totalTexas = userPurchase + totalTaxTexas;
+
+        // Send final results to console.
+        console.log(total);
+        console.log(totalTexas);
+
+
+
+
+    </script>
+</body>
+</html>

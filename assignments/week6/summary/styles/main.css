@@ -26,6 +26,10 @@ nav ul li {
     text-transform: uppercase;
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+
 main table td {
     border: 1px solid black;
     padding: 5px;
