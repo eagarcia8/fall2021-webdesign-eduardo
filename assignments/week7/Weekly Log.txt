@@ -1,0 +1,18 @@
+Monday:
+JavaScript Datatypes
+JavaScript Variables
+
+
+Tuesday:
+No Class
+
+Wednesday:
+Worked on Tax Calculator web page.
+JavaScript DOM methods
+JavaScript parseInt() and parseFloat()
+
+
+Thursday:
+JavaScript Comparison Operators
+JavaScript If Statements (if, else if, else)
+Truthy & Falsey values

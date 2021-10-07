@@ -39,10 +39,14 @@
             var taxRate = .085;
 
             // We multiply the subtotal with the tax rate to get the tax due, and store that value in totalTax variable.
-            var totalTax = subtotal * taxRate;
+            var totalTax = parseFloat(subtotal) * taxRate;
 
             // Because subtotal is a string, the + symbol will concatentate. Instead we will try to convert this string value to a number datatype so we can do addition instead.
             var totalExpense = parseFloat(subtotal) + totalTax;
+
+            // With the assignment operator (=) everything on the right side MUST happen first, and once a value is produced, it gets stored on the left side. Reversing this order does not work.
+            totalTax = totalTax.toFixed(2);
+            totalExpense = totalExpense.toFixed(2);
 
             // We assign the concatenated value we build with these variables, and place them inside of the paragraph element with the ID of "results".
             document.getElementById("results").innerHTML = "Tax: $" + totalTax + "<br />Total: $" + totalExpense;

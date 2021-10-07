@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Comparison Operators & If Statements</title>
+</head>
+<body>
+
+
+    <script>
+        
+        var noData; // If a variable does not have a value at the start, it will hold a special datatype called "undefined".
+
+        var data1;
+        var data2;
+
+
+        // COMPARISON OPERATORS
+        // === means its EXACTLY the same, note it must also must be the same DATATYPE.
+        // == means the DATA IS EXACTLY the same, the datatype can be different.
+
+        100 === 100; // true
+        100 === "100"; // false
+        "hello" === "hello"; // true
+        "hello " === "hello"; // false
+        false === true; // false
+        false === false; // true
+        false === "false"; // false
+
+        100 == "100"; // true
+        false == "false"; // true
+        "" == false; // true;
+
+        /* 
+        <   Right number needs to be smaller than left number
+        >   Right number needs to be greater than left number
+        <=  Right number is smaller/equal to left number
+        >=  Right number is greater/equal to left number
+        */
+
+        100 < 50; // false
+        0 > -10; // true
+        100 <= 100; // true
+        90 >= 50; // true
+        
+        // != The value on the right side IS NOT the same as the left side.
+
+        100 != 50; // true
+        "hello" != "hello"; // false
+        true != false; // true
+
+        // TRUTHY & FALSEY 
+        
+        false;
+        0;
+        "";
+        null;
+        undefined;
+        NaN;
+
+        // If Statement, runs code if the comparison is true.
+
+        if (false) {
+            console.log("hello");
+        }
+
+        var age = 25;
+
+        // Else keyword. Allows to run code (in the second code block) when the comparison is false.
+
+        if (age >= 21) {
+            console.log("Congratulations you can drink!");
+        } else {
+            console.log("Sorry but you are too young at the moment.");
+        }
+
+
+
+        var isRaining = false;
+        var haveUmbrella = true;
+        var haveMoney = true;
+
+
+
+        // Asks if the isRaining is true or false.
+        if (isRaining) {
+            // If isRaining is true, runs the following code:
+
+            console.log("It is currently raining hard.");
+
+            // Asks if user has umbrella.
+            if (haveUmbrella) {
+                // Runs code if user has umbrella.
+                console.log("Make sure to take your umbrella!");
+            } else {
+                // Runs code if user does not have an umbrella.
+                console.log("Take a plastic bag with you.");
+
+                if (haveMoney) {
+                    console.log("call an Uber to avoid the rain!");
+                } else {
+                    console.log("Unforunately it looks like you'll have to walk to work today.");
+                }
+            }
+
+        } else {
+            // If isRaining is false, runs the following code:
+            console.log("It is a sunny day out. Enjoy your day!");
+        }
+
+
+
+        // Else if keyword. Allows you to ask a "second" question in your if statements.
+
+        // Can the individual rent apartment.
+
+        var age = "seventeen";
+
+        if (age >= 18) {
+            console.log("You can rent an apartment.");
+        } else if (age > 0) {
+            console.log("Recommended to live with parents.");
+        } else if (age < 0) {
+            console.log("You aren't born yet!");
+        } else {
+            console.log("Sorry but I don't understand your input.")
+        }
+
+        // The if keyword is ALWAYS FIRST. else if keyword MUST come after if, and BEFORE else. else keyword MUST be the last one.
+
+
+    </script>
+</body>
+</html>
