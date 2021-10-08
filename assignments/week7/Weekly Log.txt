@@ -16,3 +16,8 @@ Thursday:
 JavaScript Comparison Operators
 JavaScript If Statements (if, else if, else)
 Truthy & Falsey values
+
+Friday:
+JavaScript For Loop
+JavaScript Function Definitions and Functions Calls
+JavaScript Function Parameters and Arguments
