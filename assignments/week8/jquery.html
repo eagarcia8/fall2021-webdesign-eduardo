@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Intro</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    
+    <script>
+        // jQuery(); This name is the same function as $().
+
+        // Selects all p elements using jQuery
+        $("p");
+        // Selects all p elements using JavaScript DOM
+        document.getElementsByTagName("p");
+
+        // Select an element with ID "anID" using jQuery.
+        $("#anID");
+
+        // Select an element with ID "anID" using JavaScript DOM
+        document.getElementById("anID");
+
+        // Waits for the HTML to fully load before running code inside of the "ready" function.
+        // $(document).ready(function () {});
+        // .ready();
+        // function () {}
+
+        $(document).ready(function () {
+
+
+            // .append() adds your elements to the END of the list of children.
+            $("body").append("<h1>Welcome to my webpage!</h1>");
+            // .prepend() works the same, but puts the code BEFORE the list of children
+
+            // .html() works the same as .append() BUT gets rid of the existing children first.
+            // $("body").html("<p>This is a paragraph</p>");
+
+            // .css() allows you to modify the css of your selected element. The first argument is the css property name, and the second argument is the css property value.
+            $("body").css("background-color", "#1abc9c");
+            $("body").css("font-size", "120px");
+
+            // The "color" line, but using JavaScript DOM
+            document.getElementByTagName("body").style.backgroundColor = "red";
+
+
+            
+
+        });
+
+
+
+    </script>
+</body>
+</html>

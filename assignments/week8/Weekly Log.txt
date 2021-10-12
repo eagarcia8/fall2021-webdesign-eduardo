@@ -1,0 +1,17 @@
+Monday:
+Holiday
+
+
+Tuesday:
+JavaScript Function Return Keyword.
+jQuery Library
+jQuery Document Ready Function
+jQuery functions: .append(), .prepend(), .html(), .css()
+
+Wednesday:
+
+
+Thursday:
+
+
+Friday:
