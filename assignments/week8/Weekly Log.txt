@@ -9,9 +9,11 @@ jQuery Document Ready Function
 jQuery functions: .append(), .prepend(), .html(), .css()
 
 Wednesday:
-
+More jQuery
+Using jQuery for action on web page.
 
 Thursday:
 
 
 Friday:
+Twitter Event

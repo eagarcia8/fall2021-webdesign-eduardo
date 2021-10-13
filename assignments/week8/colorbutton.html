@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        #container {
+            background-color: white;
+            width: 460px;
+            height: 160px;
+            border: solid black 5px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 20px;
+            line-height: 30px;
+            font-family: "Arial", "Helvetica", sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #color {
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #error {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <label for="color">Type in Hexadecimal color value</label>
+        <br />
+        <input id="color" type="text" />
+        <br />
+        <button id="runColorChange">Change Background Color</button>
+        <br />
+        <button id="runRandomColor">Create Random Color</button>
+        <p id="error"></p>
+    </div>
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#runColorChange").click(function () {
+
+                $("#error").html("");
+
+                // the jQuery .val() takes the value of the input if the parenthesis is empty, or updates the input value with the argument in the parenthesis.
+                var userColor = $("#color").val();
+
+                // the JavaScript .charAt() will get the character at that index position.
+                var userInputFirstChar = userColor.charAt(0);
+
+                if (userInputFirstChar != "#") {
+                    $("#error").html("Sorry, but that is not a valid hexadecimal value. Try again.");
+                } else {
+                    $("body").css("background-color", userColor);
+                }
+
+            });
+
+            // jQuery can detect a bunch of different "events". This includes mouse movement and keyboard presses. For keyboards, we have three in jQuery: .keypress(), .keydown(), and .keyup()
+            $("#color").keydown(function (event) {
+                if (event.which === 13) {
+
+                    $("#error").html("");
+            
+                    // jQuery .val() is a getter/setter for input boxes. If there is no value in the parenthesis, it GETS the existing value, if a value is provided in the parenthesis it ASSIGNS that value to the input box.
+                    var userColor = $("#color").val();
+
+                    var userInputFirstChar = userColor.charAt(0);
+
+                    if (userInputFirstChar != "#") {
+                        $("#error").html("Sorry, but that is not a valid hexadecimal value. Try again.");
+                    } else {
+                        $("body").css("background-color", userColor);
+                    }
+                    
+                }
+            });
+
+            $("#runRandomColor").click(function () {
+                var rgbFirstPart = "rgb(";
+                var rgbDelimiter = ", ";
+                var rgbLastPart = ")";
+
+                // Math.random() generates a random Number between 0 and .999~
+                // Math.floor() rounds a number DOWN.
+                var firstNumber = Math.floor( Math.random() * 256 );
+                var secondNumber = Math.floor( Math.random() * 256 );
+                var thirdNumber = Math.floor( Math.random() * 256 );
+
+                var rgb = rgbFirstPart + firstNumber + rgbDelimiter + secondNumber + rgbDelimiter + thirdNumber + rgbLastPart;
+
+                $("body").css("background-color", rgb);
+            });
+        });
+
+    </script>
+</body>
+</html>
