@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays & Objects</title>
+</head>
+<body>
+
+
+    <script>
+
+        // JavaScript Arrays
+
+        // A downside of variables is that they can only STORE ONE value at a time.
+        var employeeSalaries = 76000;
+
+        // An array can hold related data TOGETHER as one value.
+        var employeeSalariesArray = [
+            76000,
+            40000,
+            60000,
+            36000,
+            70000,
+            29000
+        ];
+
+        // Arrays should hold data that relate to each other in some way. The following array has mixed data which probably doesn't relate.
+        var anArrayWithMixedData = [5000, "Hello", true];
+
+        // Array Methods (Functions)
+
+        // .push() ADDS the piece of data to the end of the array.
+        console.log(employeeSalariesArray.toString());
+
+        employeeSalariesArray.push(56000);
+
+        employeeSalariesArray.push(10000);
+
+        // .pop() returns the REMOVED value to where ever you called the pop method.
+
+        employeeSalariesArray.pop();
+
+        console.log(employeeSalariesArray.toString());
+
+        // .unshift() ADDS a value to the start of the array.
+
+        employeeSalariesArray.unshift(3000);
+
+        console.log(employeeSalariesArray.toString());
+
+
+        //.shift() REMOVES a value from the start of the array. This also returns the removed value to where ever we called shift.
+
+        employeeSalariesArray.shift();
+
+        employeeSalariesArray.shift();
+
+        console.log(employeeSalariesArray.toString());
+
+
+        var aString = "hello";
+
+        // aString.shift(); Does not work because aString needs to be an array for .shift() to work.
+
+        // Finding the length of an array using .length
+        // .length is NOT A FUNCTION, so it doesnt need parenthesis at the end.
+
+        console.log(employeeSalariesArray.length);
+
+
+
+        // var message = "Employee #1 makes $" + employeeSalariesArray[0] + " a year.";
+        // console.log(message);
+
+        // Using Arrays and Loops together is really common.
+
+        for (var i = 0; i < employeeSalariesArray.length; i++) {
+
+            // We use variable i as a counter for the loop AND ALSO as an index for the array.
+            var message = "Employee #" + (i + 1) + " makes $" + employeeSalariesArray[i] + " a year";
+
+            console.log(message);
+        }
+
+
+        // JavaScript Objects
+
+        // Usage of curly braces for code blocks and Objects.
+
+        //Curly braces used for code blocks.
+        if (false) {
+            // code goes here.
+        }
+
+        // Curly braces used for objects.
+        var myFirstEmployee = {
+            "firstName": "Eduardo",
+            "age": 31,
+            "last Name": "Garcia",
+            "favoriteFoods": ["burrito", "sushi", "pizza"]
+        };
+
+        // Objects can be used to group up related data as well.
+        var myFirstEmployeeArray = [
+            "Eduardo",
+            31,
+            "Garcia",
+            ["burrito", "sushi", "pizza"]
+        ];
+
+        // These two statements should access the age from the object and array, but notice that the age in the array has been changed and now we get the last name instead.
+        myFirstEmployee.age;
+        myFirstEmployeeArray[2];
+
+
+        // Same thing as above but with last names.
+        myFirstEmployee.lastName;
+        myFirstEmployeeArray[1] = 32;
+
+        // You can update the values within arrays and objects just like if they were variables.
+        myFirstEmployee.age = 32;
+
+        myFirstEmployee.favoriteFoods[1] = "Burgers";
+
+
+    </script>
+</body>
+</html>

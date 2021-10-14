@@ -13,7 +13,8 @@ More jQuery
 Using jQuery for action on web page.
 
 Thursday:
-
+JavaScript Objects
+JavaScript Arrays
 
 Friday:
 Twitter Event
